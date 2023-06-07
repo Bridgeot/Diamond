@@ -1,3 +1,10 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
 
+:root {
+    --primary-font: 'Gilda Display', serif;
+    --secondary-font: 'Arizonia', cursive;
+
+    --color-bg: #fdf1ec;
+    --color-text: #a88e77;
 }
