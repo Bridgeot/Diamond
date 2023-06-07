@@ -1,0 +1,5 @@
+export { default as Home } from './home/Home'
+export { default as About } from './about/About'
+export { default as Talent } from './talent/Talent'
+export { default as Ranking } from './ranking/Ranking'
+export { default as Reviews } from './reviews/Reviews'
