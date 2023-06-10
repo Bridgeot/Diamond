@@ -6,6 +6,19 @@
 }
 
 body {
-    background: var(--color-bg);
-    font-family: var(--primary-font);
+    margin: 0 auto;
+    max-width: 1360px;
+    background: var(--color-white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.gradient-text {
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
