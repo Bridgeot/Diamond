@@ -1,4 +1,5 @@
 import React from 'react'
+import './ranking.css'
 
 const Ranking = () => {
   return (
