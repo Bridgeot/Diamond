@@ -1,1 +1,27 @@
+.navbar {
+    margin: 1rem 0 0;
+    display: flex;
+    overflow: hidden;
+}
 
+.navbar-logo {
+    padding: 1.25rem;
+    flex: 1.5;
+    display: flex;
+}
+
+.navbar-logo img {
+    padding: 0 0 0 1.875rem;
+    font-family: var(--gilda-display);
+    width: 6rem;
+}
+
+.navbar-menu {
+    padding: 1.25rem 4.6rem 1.25rem 1.25rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4rem;
+    list-style: none;
+}
