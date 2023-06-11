@@ -1,5 +1,4 @@
 import React from 'react'
-import Content from '../../components/content/Content'
 import './talent.css'
 
 import ProfileImg1 from '../../assets/profile-img1.png'
