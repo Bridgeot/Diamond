@@ -1,1 +1,49 @@
+.ranking {
+    padding: 6rem 4rem;
+    min-height: calc(100vh - 74px);
+    overflow: hidden;
+}
 
+.ranking-heading {
+    margin: 0 0 2rem;
+}
+
+.ranking-heading h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.ranking-content-container {
+    padding: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7.5rem;
+    width: 100%;
+}
+
+.ranking-content {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+    border: 0.1rem solid var(--primary-color);
+}
+
+.ranking-title {
+    text-decoration: 0.2rem underline;
+}
+
+.ranking-gold {
+    color: #ffd700;
+}
+
+.ranking-silver {
+    color: #c0c0c0;
+}
+
+.ranking-bronze {
+    color: #cd7f32;
+}
