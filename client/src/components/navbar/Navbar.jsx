@@ -10,7 +10,6 @@ const linkStyle = {
   fontSize: '1.25rem',
   lineHeight: '1.25rem',
   textTransform: 'uppercase',
-  cursor: 'pointer',
 }
 
 const Navbar = () => {
@@ -22,7 +21,7 @@ const Navbar = () => {
 
       <div className='navbar-menu'>
           <Link to='/' style={linkStyle}>Home</Link>
-          <Link to='#about' style={linkStyle}>About</Link>
+          <Link to='/about' style={linkStyle}>About</Link>
           <Link to='#talent' style={linkStyle}>Talent</Link>
           <Link to='#ranking' style={linkStyle}>Ranking</Link>
           <Link to='#reviews' style={linkStyle}>Reviews</Link>
