@@ -21,7 +21,7 @@ const Talent = () => {
 
       <div className='talent-content'>
         <Content title='Maki Suzuki' text='Fashionable and trendy; she is the type of girl you would want to hold onto if you prefer the finer things in life.' />
-        <Content title='Sara Boston' text='Cool, beautiful, and strong. She is the ideal girlfriend for those who prefer to not take the lead and enjoy the ride.' />
+        <Content title='Sara Boston' text='Cool, beautiful, and strong; she is the ideal girlfriend for those who prefer to not take the lead and enjoy the ride.' />
         <Content title='Layla Osaka' text='Sweet, kind, and wholesome; she is more than capable of soothing your soul. The perfect girl to bring home to your parents.' />
       </div>
     </div>
