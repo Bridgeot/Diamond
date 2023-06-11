@@ -17,8 +17,8 @@ a {
     color: var(--primary-color);
 }
 
-.gradient-text {
-    background: var(--gradient-text);
+.gradient-color {
+    background: var(--gradient-color);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
