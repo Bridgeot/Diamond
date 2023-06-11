@@ -1,1 +1,66 @@
+.home {
+    display: flex;
+    min-height: calc(100vh - 74px);
+    overflow: hidden;
+}
 
+.home-image {
+    flex: 1;
+}
+
+.home-image img {
+    margin: -3rem 0 0;
+    height: 100%;
+    width: 90%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.home-content {
+    margin: -7rem 0 0;
+    flex: 1.22;
+    display: flex;
+}
+
+.home-content-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-content-info h1 {
+    font-size: 8rem;
+}
+
+.home-content-info p {
+    margin: 0.5rem 0 1rem 0;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+.home-content-btns {
+    margin: 2rem 0 0 0;
+    display: flex;
+    gap: 2.25rem;
+}
+
+.home-content-btn1, .home-content-btn2 {
+    padding: 0.938rem 1.25rem;
+    min-width: 11.25rem;
+    font-size: 1.25rem;
+    line-height: 1em;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.home-content-btn1 {
+    background: var(--secondary-color);
+    color: var(--color-white);
+    border: none;
+}
+
+.home-content-btn2 {
+    background: var(--color-white);
+    color: var(--secondary-color);
+    border: 0.1rem solid var(--secondary-color);
+}
