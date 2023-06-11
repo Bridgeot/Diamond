@@ -1,1 +1,23 @@
+.talent {
+    padding: 6rem 4rem;
+    min-height: calc(100vh - 74px);
+    overflow: hidden;
+}
 
+.talent-heading {
+    margin: 0 0 2rem;
+}
+
+.talent-heading h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.talent-content {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+}
