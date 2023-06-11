@@ -9,7 +9,6 @@ body {
     margin: 0 auto;
     max-width: 1360px;
     background: var(--color-white);
-    font-family: var(--gilda-display);
 }
 
 a {
