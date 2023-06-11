@@ -1,4 +1,5 @@
 import React from 'react'
+import Content from '../../components/content/Content'
 import './ranking.css'
 
 const Ranking = () => {
