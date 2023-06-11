@@ -2,8 +2,8 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 
-import { Navbar, Footer } from './components'
 import { Home, About, Talent, Ranking, Reviews } from './pages'
+import { Navbar, Footer } from './components'
 
 const App = () => {
   return (
@@ -11,10 +11,10 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='#about' element={<About />} />
-        <Route path='#talent' element={<Talent />} />
-        <Route path='#ranking' element={<Ranking />} />
-        <Route path='#reviews' element={<Reviews />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/talent' element={<Talent />} />
+        <Route path='/ranking' element={<Ranking />} />
+        <Route path='/reviews' element={<Reviews />} />
       </Routes>
       <Footer />
     </div>
