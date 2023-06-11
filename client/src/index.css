@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
 :root {
     --gilda-display: 'Gilda Display', serif;
   
     --primary-color: #a88e77;
     --secondary-color: #ab6f53;
+
+    --gradient-color: linear-gradient(89.97deg, #ab6f53 1.84%, #ffad80 102.67%);
 
     --color-white: #ffffff;
     --color-page: #fdf1ec;
