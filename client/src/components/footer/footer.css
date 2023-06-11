@@ -1,1 +1,10 @@
+.footer {
+    padding: 1rem;
+    text-align: right;
+    overflow: hidden;
+}
 
+.footer p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
