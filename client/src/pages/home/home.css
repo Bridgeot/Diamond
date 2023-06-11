@@ -29,6 +29,7 @@
 }
 
 .home-content-info h1 {
+    font-family: var(--gilda-display);
     font-size: 8rem;
 }
 
@@ -47,6 +48,7 @@
 .home-content-btn1, .home-content-btn2 {
     padding: 0.938rem 1.25rem;
     min-width: 11.25rem;
+    font-family: inherit;
     font-size: 1.25rem;
     line-height: 1em;
     border-radius: 3rem;
