@@ -2,23 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 body {
     margin: 0 auto;
-    max-width: 1360px;
     background: var(--color-white);
 }
 
 a {
     text-decoration: none;
     color: var(--primary-color);
-}
-
-.gradient-color {
-    background: var(--gradient-color);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
