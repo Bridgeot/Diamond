@@ -70,6 +70,7 @@ const Reviews = () => {
             );
           })}
       </div>
+      <br />
 
       <div>
         <h2>Add a Review</h2>
@@ -80,12 +81,14 @@ const Reviews = () => {
             name='title' 
             type='text' 
           />
+          <br />
           <textarea 
             onChange={updateCreateForm} 
             value={createForm.body} 
             name='body' 
             cols='30' rows='10' 
           />
+          <br />
           <button type='submit'>Submit Review</button>
         </form>
       </div>
