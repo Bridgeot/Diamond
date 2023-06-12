@@ -12,7 +12,6 @@ require('./config/database');
 app.get('/reviews', reviewController.fetchReviews);
 app.get('/reviews/:id', reviewController.fetchReview);
 app.post('/reviews', reviewController.createReview);
-app.put('/reviews/:id', reviewController.updateReview);
 app.delete('/reviews/:id', reviewController.deleteReview);
 
 const port = process.env.PORT || 3001;

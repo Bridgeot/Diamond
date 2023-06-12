@@ -25,21 +25,6 @@ const createReview = async (req, res) => {
     res.json({ review });
 };
 
-const updateReview = async (req, res) => {
-    const reviewId = req.params.id;
-
-    const { title, body } = req.body;
-
-    await Review.findByIdAndUpdate(reviewId, {
-        title, 
-        body,
-    });
-
-    const review = await Review.findById(reviewId);
-
-    res.json({ review });
-};
-
 const deleteReview = async (req, res) => {
     const reviewId = req.params.id;
 
@@ -52,6 +37,5 @@ module.exports = {
     fetchReviews,
     fetchReview,
     createReview,
-    updateReview,
     deleteReview,
 };
