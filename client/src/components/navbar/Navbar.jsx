@@ -22,9 +22,9 @@ const Navbar = () => {
       <div className='navbar-menu'>
           <Link to='/' style={linkStyle}>Home</Link>
           <Link to='/about' style={linkStyle}>About</Link>
-          <Link to='#talent' style={linkStyle}>Talent</Link>
-          <Link to='#ranking' style={linkStyle}>Ranking</Link>
-          <Link to='#reviews' style={linkStyle}>Reviews</Link>
+          <Link to='/talent' style={linkStyle}>Talent</Link>
+          <Link to='/ranking' style={linkStyle}>Ranking</Link>
+          <Link to='/reviews' style={linkStyle}>Reviews</Link>
       </div>
     </div>
   )
