@@ -17,7 +17,9 @@ const Home = () => {
 
           <div className='home-content-btns'>
             <button className='home-content-btn1' type='button'>Rent Now</button>
-            <button className='home-content-btn2' type='button'>Learn More</button>
+            <a href='/about'>
+              <button className='home-content-btn2' type='button'>Learn More</button>
+            </a>
           </div>
         </div>
       </div>
