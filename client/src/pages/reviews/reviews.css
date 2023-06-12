@@ -1,1 +1,14 @@
+.reviews {
+    padding: 6rem 4rem;
+    min-height: calc(100vh - 74px);
+    overflow: hidden;
+}
 
+.reviews-heading {
+    margin: 0 0 2rem;
+}
+
+.reviews-heading h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
