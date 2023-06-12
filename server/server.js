@@ -1,18 +1,20 @@
-// require dependecies
 const express = require('express');
+const cors = require('cors');
+const reviewController = require('./controllers/review');
 
-// initialize the express app
 const app = express();
 
-// configure settings
+app.use(cors());
+
 require('dotenv').config();
 require('./config/database');
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-});
+app.get('/reviews', reviewController.fetchReviews);
+app.get('/reviews/:id', reviewController.fetchReview);
+app.post('/reviews', reviewController.createReview);
+app.put('/reviews/:id', reviewController.updateReview);
+app.delete('/reviews/:id', reviewController.deleteReview);
 
-// tell the app to listen
 const port = process.env.PORT || 3001;
 app.listen(port, function() {
     console.log(`Express app is running on port:${port}`);
