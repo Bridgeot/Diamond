@@ -18,15 +18,6 @@ const About = () => {
           <Content text="Fast forward to four years, and Diamond has indisputably become the number one solution not just for that one friend, but for many other people residing in Tokyo, Japan. Our service allows indivisuals to rent one of several talents to act as their girlfriend for a set amount of time and at a location of their choosing for an affordable cost." />
         </div>
       </div>
-
-      <div className='about-content-container'>
-        <div className='about-content'>
-          <Content title='Are you ready to get started?' />
-        </div>
-        <div className='about-content-btn'>
-          <button type='button'>Rent Now</button>
-        </div>
-      </div>
     </div>
   )
 }
