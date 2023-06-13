@@ -4,48 +4,44 @@ import './reviews.css'
 
 const Reviews = () => {
   const [reviews, setReviews] = useState(null);
-  const [createForm, setCreateForm ] = useState({
+  const [createReviewForm, setCreateReviewForm] = useState({
     title: '',
     body: '',
   });
 
   useEffect(() => {
     fetchReviews();
-  }, [])
-
+  }, []);
+  
   const fetchReviews = async () => {
-    const res = await axios.get('http://localhost:3001/reviews/');
+    const res = await axios.get('http://localhost:3001/reviews');
 
-    console.log(res);
     setReviews(res.data.reviews);
-    console.log(res);
   };
 
-  const updateCreateForm = (e) => {
+  const updateCreateReviewForm = (e) => {
     const { name, value } = e.target;
 
-    setCreateForm({
-      ...createForm,
+    setCreateReviewForm({
+      ...createReviewForm,
       [name]: value,
     });
-
-    console.log({ name, value });
   };
 
   const createReview = async (e) => {
     e.preventDefault();
 
-    const res = await axios.post('http://localhost:3001/reviews/', createForm);
+    const res = await axios.post('http://localhost:3001/reviews', createReviewForm);
 
     setReviews([...reviews, res.data.review]);
 
-    setCreateForm({ title: '', body: '' });
+    setCreateReviewForm({ title: '', body: '' });
   };
 
   const deleteReview = async (_id) => {
-    const res = await axios.delete(`http;//localhost:3001/reviews/${_id}`);
-    
-    const newReviews = [...reviews].filter(review => {
+    const res = await axios.delete(`http://localhost:3001/reviews/${_id}`);
+
+    const newReviews = [...reviews].filter((review) => {
       return review._id !== _id;
     });
 
@@ -65,31 +61,30 @@ const Reviews = () => {
             return (
               <div key={review._id}>
                 <h3>{review.title}</h3>
-                <button onclick={() => deleteReview(review._id)}>Delete</button>
+                <button onClick={() => deleteReview(review._id)}>
+                  Delete Note
+                </button>
               </div>
             );
           })}
       </div>
-      <br />
 
       <div>
-        <h2>Add a Review</h2>
+        <h2>Create Review:</h2>
         <form onSubmit={createReview}>
           <input 
-            onChange={updateCreateForm} 
-            value={createForm.title} 
+            onChange={updateCreateReviewForm} 
             name='title' 
+            value={createReviewForm.title} 
             type='text' 
           />
-          <br />
           <textarea 
-            onChange={updateCreateForm} 
-            value={createForm.body} 
+            onChange={updateCreateReviewForm} 
             name='body' 
-            cols='30' rows='10' 
-          />
-          <br />
-          <button type='submit'>Submit Review</button>
+            value={createReviewForm.body} 
+            cols='30' rows='10'>
+          </textarea>
+          <button type='submit'>Create Review</button>
         </form>
       </div>
     </div>
