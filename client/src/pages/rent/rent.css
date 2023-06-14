@@ -1,0 +1,54 @@
+.rent {
+    padding: 6rem 4rem;
+    min-height: calc(100vh - 74px);
+    overflow: hidden;
+}
+
+.rent-heading {
+    margin: 0 0 6rem;
+}
+
+.rent-heading h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.rent-map {
+    display: flex;
+    gap: 3.5rem;
+}
+
+.rent-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.rent-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.rent-info input, .rent-info select {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    border: 0.1rem solid var(--secondary-color);
+}
+
+.rent-form button {
+    margin: 1.6rem 0 0;
+    padding: 0.5rem;
+    min-width: 11.25rem;
+    background: var(--secondary-color);
+    color: var(--color-white);
+    font-family: inherit;
+    font-size: 1.25rem;
+    line-height: 1em;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+}
