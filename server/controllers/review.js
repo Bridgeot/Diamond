@@ -15,10 +15,11 @@ const fetchReview = async (req, res) => {
 };
 
 const createReview = async (req, res) => {
-    const { title, body } = req.body;
+    const { title, rating, body } = req.body;
 
     const review = await Review.create({
         title,
+        rating,
         body,
     });
 
