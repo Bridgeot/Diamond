@@ -4,7 +4,7 @@ const review = require('./controllers/review');
 
 const app = express();
 
-require('dotenv').config();
+require('dotenv').config({ path: 'ENV_FILENAME' });
 require('./config/database');
 
 app.use(express.json());
