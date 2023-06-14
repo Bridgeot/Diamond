@@ -25,6 +25,9 @@ Rent Screen:
 MongoDB, Express, React, Node, and Vite.
 
 ## Getting Started
+
+CLICK <a href='https://diamond-p4.netlify.app/'>HERE</a> TO CHECK OUT THE APP!
+
 If you would like to run the application locally, you can do so by <a href='https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository'>cloning</a> it onto your device. Be sure to run "npm i" to download the necessary packages. Then, you can run npm start to run the application locally.
 
 ## Next Steps
