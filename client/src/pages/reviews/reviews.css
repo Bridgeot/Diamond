@@ -5,10 +5,87 @@
 }
 
 .reviews-heading {
-    margin: 0 0 2rem;
+    margin: 0 0 6rem;
 }
 
 .reviews-heading h2 {
     font-size: 4rem;
     text-transform: uppercase;
+}
+
+.reviews-content-container {
+    display: flex;
+    justify-content: center;
+    gap: 12.5rem;
+}
+
+.reviews-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 60%;
+}
+
+.reviews-content h2 {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+.reviews-content-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.reviews-content-info h3 {
+    color: var(--secondary-color);
+    font-size: 1.75rem;
+}
+
+.reviews-content-info p {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+.reviews-content-info-btn button {
+    margin: 1rem 0 0;
+    padding: 0.5rem;
+    min-width: 11.25rem;
+    background: var(--color-white);
+    color: var(--secondary-color);
+    font-family: inherit;
+    font-size: 1.25rem;
+    line-height: 1em;
+    border: 0.1rem solid var(--secondary-color);
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.reviews-content-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.reviews-content-form input, 
+.reviews-content-form select,
+.reviews-content-form textarea {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    border: 0.1rem solid var(--secondary-color);
+}
+
+.reviews-content-form button {
+    margin: 1rem 0 0;
+    padding: 0.5rem;
+    background: var(--secondary-color);
+    color: var(--color-white);
+    width: 35%;
+    font-family: inherit;
+    font-size: 1.25rem;
+    line-height: 1em;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
 }
