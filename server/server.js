@@ -1,20 +1,14 @@
-// require dependencies
 const express = require('express');
 const cors = require('cors');
 const review = require('./controllers/review');
 
-// initialize express application
 const app = express();
 
-// configure application settings
 require('dotenv').config();
 require('./config/database');
 
-// mount middlware
 app.use(express.json());
 app.use(cors());
-
-// mount routes
 
 app.get('/reviews', review.fetchReviews);
 app.get('/reviews/:id', review.fetchReview);
