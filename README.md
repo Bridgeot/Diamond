@@ -4,10 +4,12 @@ This is a website for Diamond - a fictional company that provides a service whic
 ## Screenshots
 
 ## Technologies Used
-MongoDB, Express, React and Node.
+MongoDB, Express, React, Node, and Vite.
 
 ## Getting Started
+If you would like to run the application locally, you can do so by <a href='https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository'>cloning</a> it onto your device. Be sure to run npm i to download the necessary packages. Then, you can run npm start to run the application locally.
 
 ## Next Steps
 - Add visually appealing animations or effects that users can see while interacting with the website.
 - Add authentication, so users can login and out of the website.
+- Add mobile responsiveness
