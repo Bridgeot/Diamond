@@ -1,10 +1,10 @@
 // const express = require('express');
+// const { fetchReviews, createReview } = require('../controllers/review');
+
 // const router = express.Router();
 
-// const reviewController = require("../controllers/review");
-
-// router.post('/', reviewController.create);
-
-// router.get('/', reviewController.get);
+// router.route('/').get(fetchReviews);
+// router.route('/create').post(createReview);
+// // router.route('/:id').get().put().delete();
 
 // module.exports = router;
