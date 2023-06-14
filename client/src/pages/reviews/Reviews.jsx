@@ -15,7 +15,7 @@ const Reviews = () => {
   }, []);
   
   const fetchReviews = async () => {
-    const res = await axios.get('http://localhost:3001/reviews');
+    const res = await axios.get('https://diamond-project.herokuapp.com/reviews');
 
     setReviews(res.data.reviews);
   };
@@ -32,7 +32,7 @@ const Reviews = () => {
   const createReview = async (e) => {
     e.preventDefault();
 
-    const res = await axios.post('http://localhost:3001/reviews', createReviewForm);
+    const res = await axios.post('https://diamond-project.herokuapp.com/reviews', createReviewForm);
 
     setReviews([...reviews, res.data.review]);
 
@@ -40,7 +40,7 @@ const Reviews = () => {
   };
 
   const deleteReview = async (_id) => {
-    const res = await axios.delete(`http://localhost:3001/reviews/${_id}`);
+    const res = await axios.delete(`https://diamond-project.herokuapp.com/reviews/${_id}`);
 
     const newReviews = [...reviews].filter((review) => {
       return review._id !== _id;
