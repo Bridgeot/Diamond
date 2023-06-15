@@ -33,11 +33,18 @@ function Rent() {
   };
 
   const updateRentForm = (e) => {
+    const { name, value } = e.target;
 
+    setRentFormData({
+      ...rentFormData, [name]: value
+    });
   };
 
   const submitRentForm = (e) => {
     e.preventDefault();
+
+    setRentFormData({ fname: '', email: '', tname: '', 
+    trtime: '', dlocation: '', comment: '',});
   };
 
   return (
@@ -48,7 +55,7 @@ function Rent() {
 
       <div className='rent-map-container'>
         <div className='rent-map'>
-          <form onSubmit={submitRentForm} method='POST' className='rent-form'>
+          <form onSubmit={submitRentForm} method='post' className='rent-form'>
             <div className='rent-info'>
               <label for='fname'>Full Name:</label>
               <input onChange={updateRentForm} name='fname' value={rentFormData.fname} type='text' />
@@ -64,9 +71,9 @@ function Rent() {
             <label className='rent-info'>
               Rental Time:
               <select onChange={updateRentForm} name='trtime' value={rentFormData.trtime}>
-                <option value='1'>1 hourr</option>
+                <option value='3'>3 hours</option>
                 <option value='2'>2 hours</option>
-                <option value='3' selected>3 hours</option>
+                <option value='1'>1 hour</option>
               </select>
             </label>
             <div className='rent-info'>
