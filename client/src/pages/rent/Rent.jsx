@@ -1,17 +1,25 @@
-import React, { Fragment, useState } from 'react'
+import React, { useState } from 'react'
 import { GoogleMap, InfoWindowF, MarkerF, useLoadScript } from '@react-google-maps/api'
 import './rent.css'
 
-const marker = [
-  {
-    id: 1,
-    name: 'Tokyo, Japan',
-    position: { lat: 35.6762, lng: 139.6503 },
-  }
-]
-
 function Rent() {
   const [mapMarker, setMapMarker] = useState(null);
+  const [rentFormData, setRentFormData] = useState({
+    fname: '',
+    email: '',
+    tname: '',
+    trtime: '',
+    dlocation: '',
+    comment: '',
+  });
+
+  const marker = [
+    {
+      id: 1,
+      name: 'Tokyo, Japan',
+      position: { lat: 35.6762, lng: 139.6503 },
+    }
+  ]
 
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAP_API_KEY,
@@ -24,9 +32,13 @@ function Rent() {
     setMapMarker(marker);
   };
 
-  const submitForm = (e) => {
+  const updateRentForm = (e) => {
+
+  };
+
+  const submitRentForm = (e) => {
     e.preventDefault();
-  }
+  };
 
   return (
     <div className='rent'>
@@ -34,24 +46,24 @@ function Rent() {
         <h2 className='gradient-color'>Rental Form</h2>
       </div>
 
-      <Fragment>
+      <div className='rent-map-container'>
         <div className='rent-map'>
-          <form onsubmit={submitForm} action='' method='POST' className='rent-form'>
+          <form onSubmit={submitRentForm} method='POST' className='rent-form'>
             <div className='rent-info'>
-              <label for='name'>Name:</label>
-              <input type='text' name='name' />
+              <label for='fname'>Full Name:</label>
+              <input onChange={updateRentForm} name='fname' value={rentFormData.fname} type='text' />
             </div>
             <div className='rent-info'>
               <label for='email'>Email:</label>
-              <input type='email' name='email' />
+              <input onChange={updateRentForm} name='email' value={rentFormData.email} type='email' />
             </div>
             <div className='rent-info'>
               <label for='tname'>Talent Name:</label>
-              <input type='text' name='tname' />
+              <input onChange={updateRentForm} name='tname' value={rentFormData.tname} type='text' />
             </div>
             <label className='rent-info'>
               Rental Time:
-              <select name='trtime'>
+              <select onChange={updateRentForm} name='trtime' value={rentFormData.trtime}>
                 <option value='1'>1 hourr</option>
                 <option value='2'>2 hours</option>
                 <option value='3' selected>3 hours</option>
@@ -59,11 +71,11 @@ function Rent() {
             </label>
             <div className='rent-info'>
               <label for='dlocation'>Date Location:</label>
-              <input type='text' name='dlocation' />
+              <input onChange={updateRentForm} name='dlocation' value={rentFormData.dlocation} type='text' />
             </div>
             <div className='rent-info'>
               <label for='comment'>Comment:</label>
-              <input type='text' name='comment' />
+              <input onChange={updateRentForm} name='comment' value={rentFormData.comment} type='text' />
             </div>
             <button type='submit'>Submit Form</button>
           </form>
@@ -95,7 +107,7 @@ function Rent() {
             ) : null}
           </div>
         </div>
-      </Fragment>
+      </div>
     </div>
   );
 }
