@@ -4,6 +4,7 @@ import './rent.css'
 
 function Rent() {
   const [mapMarker, setMapMarker] = useState(null);
+  const [rentFormMsg, setRentFormMsg] = useState('');
   const [rentFormData, setRentFormData] = useState({
     fname: '',
     email: '',
@@ -45,6 +46,8 @@ function Rent() {
 
     setRentFormData({ fname: '', email: '', tname: '', 
     trtime: '', dlocation: '', comment: '',});
+
+    setRentFormMsg(`Thank you! We will be in contact with you soon...`);
   };
 
   return (
@@ -114,6 +117,10 @@ function Rent() {
             ) : null}
           </div>
         </div>
+      </div>
+
+      <div className='rent-message'>
+          <p>{rentFormMsg}</p>
       </div>
     </div>
   );
