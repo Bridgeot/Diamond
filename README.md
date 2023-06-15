@@ -8,7 +8,7 @@ CLICK <a href='https://diamond-p4.netlify.app/'>HERE</a> TO CHECK OUT THE SITE!
 If you would like to run the application locally, you can do so by <a href='https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository'>cloning</a> it onto your device. Be sure to run **npm i** to download the necessary packages. After that, you can run **npm start** to run the application locally.
 
 ## Technologies Used
-MongoDB, Express, React + Vite, Node, and Adobe Photoshop (for images).
+MongoDB, Express, React + Vite, Node, <a href='https://developers.google.com/maps/documentation/javascript'>Google Maps API</a>, and Adobe Photoshop.
 
 ## Screenshots
 
